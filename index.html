@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharmin Salman Waghoo — Statement of Experience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons-outline.min.css">
+<style>
+  :root{
+    --bg: #121A2C;
+    --page: #16203A;
+    --surface: #1B2743;
+    --rule: #33456C;
+    --rule-soft: #253352;
+    --ink: #F1EADC;
+    --ink-dim: #9CA3B8;
+    --ink-faint: #6C7893;
+    --stamp: #C6544A;
+    --stamp-dim: #6B322D;
+    --gold: #CFA43C;
+    --gold-dim: #6B5A25;
+    --serif: 'Spectral', serif;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --ease: cubic-bezier(0.16,1,0.3,1);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      repeating-linear-gradient(180deg, transparent 0 38px, rgba(241,234,220,0.02) 38px 39px),
+      var(--bg);
+    color:var(--ink); font-family:var(--sans); line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:900px; margin:0 auto; padding:0 30px;}
+  ::selection{background:rgba(198,84,74,0.3); color:var(--ink);}
+  *:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
+
+  .reveal{opacity:0; transform:translateY(12px); transition:opacity 0.55s var(--ease), transform 0.55s var(--ease);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  nav{position:sticky; top:0; z-index:50; background:rgba(18,26,44,0.85); backdrop-filter:blur(8px); border-bottom:1px solid var(--rule);}
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; padding:16px 30px;}
+  .vol{font-family:var(--mono); font-size:11px; color:var(--ink-faint); letter-spacing:1.5px; text-transform:uppercase;}
+  .navlinks{display:flex; gap:26px; font-family:var(--mono); font-size:12px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.8px;}
+  .navlinks a{position:relative; transition:color 0.2s;}
+  .navlinks a:hover{color:var(--gold);}
+
+  /* ---- hero / cover ---- */
+  header.cover{padding:70px 0 50px; border-bottom:3px double var(--rule);}
+  .eyebrow{font-family:var(--mono); font-size:11.5px; color:var(--stamp); letter-spacing:2.5px; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:10px;}
+  .eyebrow::after{content:""; flex:1; height:1px; background:var(--rule-soft);}
+  h1.name{font-family:var(--serif); font-weight:600; font-size:44px; letter-spacing:-0.5px; color:var(--ink);}
+  p.title-line{font-family:var(--mono); font-size:14px; color:var(--gold); margin-top:8px; letter-spacing:0.5px;}
+  p.summary{font-family:var(--serif); font-size:17px; color:var(--ink-dim); margin-top:20px; max-width:620px; font-style:italic; line-height:1.7;}
+
+  .stamp-wrap{position:relative; margin-top:28px; display:inline-block;}
+  .stamp{
+    font-family:var(--mono); font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--stamp); border:1.5px solid var(--stamp); border-radius:4px;
+    padding:7px 14px; display:inline-flex; align-items:center; gap:7px;
+    transform:rotate(-3deg);
+  }
+  .stamp .dot{width:6px; height:6px; border-radius:50%; background:var(--stamp); animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
+
+  .ledger-row{display:flex; align-items:baseline; gap:8px; font-family:var(--mono); font-size:13px; color:var(--ink-dim); margin-top:10px;}
+  .ledger-row .label{white-space:nowrap; color:var(--ink-faint);}
+  .ledger-row .fill{flex:1; border-bottom:1px dotted var(--rule); position:relative; top:-3px;}
+  .ledger-row a{color:var(--ink); transition:color 0.2s;}
+  .ledger-row a:hover{color:var(--gold);}
+  .contact-block{margin-top:26px; max-width:420px;}
+
+  /* ---- sections ---- */
+  section{padding:56px 0;}
+  section + section{border-top:1px solid var(--rule-soft);}
+  h2.section-title{font-family:var(--serif); font-weight:600; font-size:26px; margin-bottom:8px;}
+  .section-index{font-family:var(--mono); font-size:11px; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  .section-rule{height:1px; background:var(--rule); margin:18px 0 32px;}
+
+  /* skills as ledger list */
+  .materials{display:grid; grid-template-columns:1fr 1fr; gap:6px 40px;}
+  .material-row{display:flex; align-items:baseline; gap:8px; font-family:var(--mono); font-size:13.5px; padding:7px 0; border-bottom:1px solid var(--rule-soft);}
+  .material-row i{font-size:14px; color:var(--gold); flex-shrink:0;}
+  .material-row .fill{flex:1; border-bottom:1px dotted var(--rule); position:relative; top:-3px;}
+  .material-row .qty{color:var(--ink-faint); font-size:11.5px;}
+
+  /* experience */
+  .job{padding:20px 0; border-bottom:1px solid var(--rule-soft);}
+  .job:first-child{padding-top:0;}
+  .job:last-child{border-bottom:none;}
+  .job-head{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;}
+  .job-no{font-family:var(--mono); font-size:12px; color:var(--gold); flex-shrink:0;}
+  .job-role{font-family:var(--serif); font-weight:600; font-size:18px; color:var(--ink);}
+  .job-fill{flex:1; border-bottom:1px dotted var(--rule); position:relative; top:-4px; min-width:20px;}
+  .job-period{font-family:var(--mono); font-size:12px; color:var(--ink-faint); white-space:nowrap;}
+  .job-org{font-family:var(--mono); font-size:13px; color:var(--stamp); margin:6px 0 12px; padding-left:40px;}
+  .job ul{list-style:none; padding-left:40px;}
+  .job li{font-size:14px; color:var(--ink-dim); padding-left:16px; position:relative; margin-bottom:7px;}
+  .job li::before{content:"—"; position:absolute; left:0; color:var(--ink-faint);}
+
+  /* projects */
+  .group-head{font-family:var(--mono); font-size:12px; color:var(--stamp); text-transform:uppercase; letter-spacing:1.8px; margin:34px 0 16px; display:flex; align-items:center; gap:12px;}
+  .group-head:first-of-type{margin-top:0;}
+  .group-head::after{content:""; flex:1; height:1px; background:var(--rule-soft);}
+
+  .lineitem{padding:14px 0; border-bottom:1px solid var(--rule-soft); display:flex; flex-direction:column; gap:5px;}
+  .lineitem-head{display:flex; align-items:baseline; gap:10px;}
+  .lineitem-no{font-family:var(--mono); font-size:11.5px; color:var(--ink-faint); flex-shrink:0; width:34px;}
+  .lineitem-name{font-family:var(--serif); font-weight:600; font-size:15.5px; color:var(--ink);}
+  .lineitem-name a{color:var(--gold); font-family:var(--mono); font-size:12px; margin-left:8px;}
+  .lineitem-name a:hover{color:var(--ink);}
+  .lineitem-desc{font-size:13.5px; color:var(--ink-dim); padding-left:44px; max-width:640px;}
+  .lineitem-tags{display:flex; flex-wrap:wrap; gap:6px; padding-left:44px; margin-top:2px;}
+  .ltag{font-family:var(--mono); font-size:10.5px; color:var(--ink-faint); border:1px solid var(--rule); border-radius:3px; padding:2px 7px;}
+
+  /* flagship project card */
+  .flagship{border:1px solid var(--rule); border-radius:8px; background:var(--surface); padding:24px 26px; margin-bottom:6px;}
+  .flagship-head{display:flex; align-items:baseline; gap:10px; margin-bottom:14px; flex-wrap:wrap;}
+  .flagship-no{font-family:var(--mono); font-size:12px; color:var(--gold);}
+  .flagship-name{font-family:var(--serif); font-weight:700; font-size:20px;}
+  .flagship-link{font-family:var(--mono); font-size:12px; color:var(--gold); margin-left:auto;}
+  .flagship-link:hover{color:var(--ink);}
+  .flagship p.desc{font-size:14.5px; color:var(--ink-dim); margin-bottom:14px;}
+  .flagship ul{list-style:none; margin-bottom:14px;}
+  .flagship li{font-size:14px; color:var(--ink-dim); padding-left:18px; position:relative; margin-bottom:7px;}
+  .flagship li::before{content:"—"; position:absolute; left:0; color:var(--ink-faint);}
+  .flagship .lineitem-tags{padding-left:0;}
+
+  /* india parenting submodules within flagship-style card */
+  .submod{padding:10px 0; border-top:1px dashed var(--rule-soft);}
+  .submod .path{font-family:var(--mono); font-size:12px; color:var(--gold);}
+  .submod p{font-size:13.5px; color:var(--ink-dim); margin-top:4px;}
+  .submod a{color:var(--gold); font-family:var(--mono); font-size:11.5px;}
+
+  /* totals / contact */
+  .totals{display:flex; justify-content:flex-end; margin-top:20px;}
+  .totals table{font-family:var(--mono); font-size:13px; border-collapse:collapse;}
+  .totals td{padding:6px 0 6px 30px; color:var(--ink-dim); text-align:right;}
+  .totals tr:last-child td{border-top:2px double var(--rule); color:var(--gold); font-weight:600; padding-top:10px;}
+
+  .contact-card{border:1px solid var(--rule); border-radius:8px; background:var(--surface); padding:32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;}
+  .contact-links{display:flex; flex-direction:column; gap:12px; font-family:var(--mono); font-size:14px;}
+  .contact-links a{display:flex; align-items:center; gap:10px; transition:color 0.2s;}
+  .contact-links a:hover{color:var(--gold);}
+  .contact-links i{font-size:16px; color:var(--stamp);}
+  .btn{font-family:var(--mono); font-size:13px; color:var(--bg); background:var(--gold); padding:13px 24px; border-radius:5px; display:inline-flex; align-items:center; gap:8px; transition:transform 0.2s var(--ease), background 0.2s;}
+  .btn:hover{transform:translateY(-2px); background:#E0BB55;}
+
+  footer{padding:34px 0 50px; text-align:center; color:var(--ink-faint); font-family:var(--mono); font-size:11.5px; border-top:3px double var(--rule);}
+
+  @media (max-width:640px){
+    h1.name{font-size:32px;}
+    .materials{grid-template-columns:1fr;}
+    .job-org, .job ul, .lineitem-desc, .lineitem-tags{padding-left:0;}
+    .totals{justify-content:flex-start;}
+    .contact-card{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="vol">Vol. 01 — Sharmin Salman Waghoo</div>
+    <div class="navlinks">
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="eyebrow reveal">Statement of experience</div>
+    <h1 class="name reveal">Sharmin Salman Waghoo</h1>
+    <p class="title-line reveal">Web &amp; Mobile App Developer — Kuwait</p>
+    <p class="summary reveal">Resourceful developer building e-commerce marketplaces, ERP systems, and scalable REST APIs across Kuwait and India — fourteen years translating business requirements into production-ready systems.</p>
+    <div class="contact-block reveal">
+      <div class="ledger-row"><span class="label">Email</span><span class="fill"></span><a href="mailto:sharminwaghoo317@gmail.com">sharminwaghoo317@gmail.com</a></div>
+      <div class="ledger-row"><span class="label">Phone</span><span class="fill"></span><a href="tel:+96565157064">+965 6515 7064</a></div>
+      <div class="ledger-row"><span class="label">Based in</span><span class="fill"></span><span>Kuwait</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-index reveal">Section A</div>
+    <h2 class="section-title reveal">Materials &amp; tools</h2>
+    <div class="section-rule reveal"></div>
+    <div class="materials reveal">
+      <div class="material-row"><i class="ti ti-brand-php"></i><span>PHP / Laravel</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-brand-react"></i><span>JavaScript / React</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-device-mobile"></i><span>React Native</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-brand-nodejs"></i><span>Node.js</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-brand-apple"></i><span>Swift (iOS)</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-brand-c-sharp"></i><span>C# / ASP.NET Core</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-brand-wordpress"></i><span>WordPress</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-shopping-cart"></i><span>Magento / OpenCart</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-layout"></i><span>October CMS</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-message-circle"></i><span>vBulletin</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-database"></i><span>MySQL / MS SQL Server</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-leaf"></i><span>MongoDB</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-git-branch"></i><span>Git</span><span class="fill"></span></div>
+      <div class="material-row"><i class="ti ti-api"></i><span>REST API design</span><span class="fill"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-index reveal">Section B</div>
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="section-rule reveal"></div>
+    <div class="reveal">
+      <div class="job">
+        <div class="job-head">
+          <span class="job-no">01</span>
+          <span class="job-role">Web &amp; App Developer</span>
+          <span class="job-fill"></span>
+          <span class="job-period">Apr 2021 – present</span>
+        </div>
+        <div class="job-org">Creativity Business Solutions, Kuwait</div>
+        <ul>
+          <li>Develop eCommerce marketplace platforms end-to-end — catalog, checkout, and ongoing API integrations with payment gateways and third-party services</li>
+          <li>Architect scalable REST APIs consumed by web front ends and React Native mobile apps</li>
+          <li>Build CSV bulk-import workflows and role-based admin access controls for dashboards</li>
+          <li>Run cross-browser, W3C-standard usability testing and QA validation before release</li>
+          <li>Work with designers, QA, and stakeholders to turn business needs into technical specs</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-no">02</span>
+          <span class="job-role">Senior Web Developer</span>
+          <span class="job-fill"></span>
+          <span class="job-period">Feb 2020 – Mar 2021</span>
+        </div>
+        <div class="job-org">Altius</div>
+        <ul>
+          <li>Built and maintained database-driven PHP websites for multiple clients, front and back end</li>
+          <li>Customized OpenCart storefronts — theme design, catalog structuring, new features</li>
+          <li>Performed usability and functional testing against W3C standards before handover</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-no">03</span>
+          <span class="job-role">Web Developer</span>
+          <span class="job-fill"></span>
+          <span class="job-period">Feb 2019 – Dec 2020</span>
+        </div>
+        <div class="job-org">Film District</div>
+        <ul>
+          <li>Built and maintained WordPress sites, including custom themes and plugins</li>
+          <li>Owned front-to-back development on OpenCart storefronts — Martcastle, Pharmaglobalrx, Skynet Surgical</li>
+          <li>Coordinated with clients to convert business and design requirements into working features</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-no">04</span>
+          <span class="job-role">Web/App Developer</span>
+          <span class="job-fill"></span>
+          <span class="job-period">May 2012 – Dec 2018</span>
+        </div>
+        <div class="job-org">India Parenting Pvt. Ltd.</div>
+        <ul>
+          <li>Built core PHP applications on LAMP/WAMP — baby-names directory, due-date and ovulation calculators, cross-content favorites</li>
+          <li>Built React Native and Node.js apps, including full admin dashboards for users, companies, and content</li>
+          <li>Built and moderated vBulletin community forums with custom plugins and admin enhancements</li>
+          <li>Delivered a native iOS (Swift) companion app on REST APIs built with the Slim Framework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-index reveal">Section C</div>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="section-rule reveal"></div>
+
+    <div class="flagship reveal">
+      <div class="flagship-head">
+        <span class="flagship-no">No. 001</span>
+        <span class="flagship-name">3rstore</span>
+        <a class="flagship-link" href="https://3roodq8.com/" target="_blank" rel="noopener">3roodq8.com ↗</a>
+      </div>
+      <p class="desc">E-commerce marketplace in Kuwait. Maintained API integrations and drove ongoing feature work across the platform.</p>
+      <ul>
+        <li>Integrated inventory management software to track stock levels and keep records accurate</li>
+        <li>Built related-product search across names, categories, and keywords</li>
+        <li>Shipped advanced reporting with Excel export and import</li>
+        <li>Automated disabling of products after 15 days out of stock</li>
+        <li>Fixed order statistics and sharpened sales and order analytics on the admin dashboard</li>
+        <li>Added order filtering by payment method, country, area, status, and date range</li>
+        <li>Designed and optimized RESTful APIs for product, order, and reporting modules</li>
+      </ul>
+      <div class="lineitem-tags"><span class="ltag">Laravel</span><span class="ltag">PHP</span><span class="ltag">REST API</span><span class="ltag">Git</span></div>
+    </div>
+
+    <div class="group-head reveal">E-commerce &amp; marketplaces</div>
+    <div class="reveal">
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">002</span><span class="lineitem-name">FeshaApp <a href="https://play.google.com/store/apps/details?id=com.feshaapp&hl=en" target="_blank" rel="noopener">↗</a></span></div>
+        <p class="lineitem-desc">Retail app for toys spanning motor-skills training, educational and role-play toys, logic games, and arts and crafts. Implemented and tested third-party API integrations.</p>
+        <div class="lineitem-tags"><span class="ltag">OpenCart</span><span class="ltag">PHP</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">003</span><span class="lineitem-name">TheBrandsdepot</span></div>
+        <p class="lineitem-desc">eCommerce storefront on Magento — customized the theme and delivered design and functional enhancements.</p>
+        <div class="lineitem-tags"><span class="ltag">Magento 2.2.6</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">004</span><span class="lineitem-name">Skynet Surgical</span></div>
+        <p class="lineitem-desc">eCommerce site giving customers access to leading medical-supply brands. Owned design and complete storefront functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">OpenCart</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">005</span><span class="lineitem-name">Martcastle</span></div>
+        <p class="lineitem-desc">Online eCommerce store for leather jackets. Owned design and complete storefront functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">OpenCart</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">006</span><span class="lineitem-name">Pharmaglobalrx <a href="https://www.pharmaglobalrx.com/" target="_blank" rel="noopener">↗</a></span></div>
+        <p class="lineitem-desc">Online eCommerce store for medicine. Owned design and complete storefront functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">OpenCart</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">007</span><span class="lineitem-name">Palas Jewellery Blog</span></div>
+        <p class="lineitem-desc">eCommerce website for a jewellery brand — customized blog theme, design, and functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">WordPress</span></div>
+      </div>
+    </div>
+
+    <div class="group-head reveal">Business &amp; ERP</div>
+    <div class="reveal">
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">008</span><span class="lineitem-name">Cable Magic Software (ERP)</span></div>
+        <p class="lineitem-desc">Business ERP managing customer data end-to-end: accounting dashboard with daily and monthly income tracking, configurable service packages, net-worth reporting, detailed invoicing, and payment confirmations. Owned design and complete functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">Laravel</span></div>
+      </div>
+    </div>
+
+    <div class="group-head reveal">Mobile &amp; native apps</div>
+    <div class="reveal">
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">009</span><span class="lineitem-name">HappMee Admin Dashboard</span></div>
+        <p class="lineitem-desc">Admin dashboard for managing users, companies, modules, challenges, and learning content — with CSV bulk-import and role-based access controls.</p>
+        <div class="lineitem-tags"><span class="ltag">React Native</span><span class="ltag">Node.js</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">010</span><span class="lineitem-name">HappMe App <a href="https://apps.apple.com/in/app/happme/id6474512748" target="_blank" rel="noopener">↗</a></span></div>
+        <p class="lineitem-desc">iOS app. Customized the frontend design and worked on backend functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">iOS</span></div>
+      </div>
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">011</span><span class="lineitem-name">Happiness Challenge</span></div>
+        <p class="lineitem-desc">Consumer app presenting users with a series of tasks to complete. Owned customization, design, and functionality.</p>
+        <div class="lineitem-tags"><span class="ltag">React</span><span class="ltag">MongoDB</span></div>
+      </div>
+    </div>
+
+    <div class="group-head reveal">Agency &amp; CMS sites</div>
+    <div class="reveal">
+      <div class="lineitem">
+        <div class="lineitem-head"><span class="lineitem-no">012</span><span class="lineitem-name">The Interiors Co.</span></div>
+        <p class="lineitem-desc">Interior-design business website — customized site functionality and delivered ongoing feature enhancements.</p>
+        <div class="lineitem-tags"><span class="ltag">WordPress</span></div>
+      </div>
+    </div>
+
+    <div class="group-head reveal">India Parenting platform</div>
+    <div class="flagship reveal">
+      <div class="flagship-head">
+        <span class="flagship-no">No. 013</span>
+        <span class="flagship-name">indiaparenting.com</span>
+      </div>
+      <p class="desc">India's leading parenting portal — six years of core module ownership, frontend and backend, on LAMP/WAMP.</p>
+      <div class="submod">
+        <div class="path">→ babynames <a href="https://www.indiaparenting.com/babynames/" target="_blank" rel="noopener">↗</a></div>
+        <p>Large searchable directory of Indian baby names with meanings and a favorites feature.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ due-date &amp; ovulation calculators</div>
+        <p>Pregnancy due-date calculator predicting delivery date, quickening, and first-heartbeat timing, plus a companion ovulation calculator, and an accompanying Facebook app.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ favorites</div>
+        <p>Cross-content favorites spanning baby names, articles, forums, and interactive tools, with add/delete functionality.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ forums <a href="https://www.indiaparenting.com/boards/index.cgi" target="_blank" rel="noopener">↗</a></div>
+        <p>Community forum for posts, threads, and discussions on vBulletin, with custom plugins and admin-panel enhancements.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ responsive homepage</div>
+        <p>Mobile homepage surfacing the latest articles, baby-name search, contest winners, and popular forum threads.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ iOS app</div>
+        <p>Native companion app built on REST APIs with the Slim Framework, covering pregnancy, baby-names, parenting-style, and teen-issue content.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ baby photo contest <a href="https://www.indiaparenting.com/contests/babyphotocontest/contest_registration.php" target="_blank" rel="noopener">↗</a></div>
+        <p>Application pages with both frontend and backend functionality.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ greeting cards <a href="https://www.indiaparenting.com/greeting-cards/make-a-greeting-card.shtml" target="_blank" rel="noopener">↗</a></div>
+        <p>Greeting card module, developed and maintained end to end.</p>
+      </div>
+      <div class="submod">
+        <div class="path">→ articles <a href="https://www.indiaparenting.com/child-development/index.shtml" target="_blank" rel="noopener">↗</a></div>
+        <p>Article channel, sub-channel, and landing page modules, with improved structure and navigation.</p>
+      </div>
+      <div class="lineitem-tags" style="margin-top:12px; padding-left:0;"><span class="ltag">Core PHP</span><span class="ltag">LAMP/WAMP</span><span class="ltag">jQuery</span><span class="ltag">vBulletin</span></div>
+    </div>
+
+    <div class="totals reveal">
+      <table>
+        <tr><td>Years active</td><td>14</td></tr>
+        <tr><td>Projects delivered</td><td>13</td></tr>
+        <tr><td>Platforms shipped on</td><td>8</td></tr>
+        <tr><td>Total</td><td>Open to remote work</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-index reveal">Section D</div>
+    <h2 class="section-title reveal">Get in touch</h2>
+    <div class="section-rule reveal"></div>
+    <div class="contact-card reveal">
+      <div class="contact-links">
+        <a href="mailto:sharminwaghoo317@gmail.com"><i class="ti ti-mail"></i>sharminwaghoo317@gmail.com</a>
+        <a href="tel:+96565157064"><i class="ti ti-phone"></i>+965 6515 7064</a>
+        <span style="display:flex; align-items:center; gap:10px; color:var(--ink-dim);"><i class="ti ti-map-pin" style="color:var(--stamp);"></i>Kuwait</span>
+      </div>
+      <a class="btn" href="mailto:sharminwaghoo317@gmail.com">Send a message <i class="ti ti-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  filed by sharmin · 2026
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
